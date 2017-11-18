@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<A6_x &le; 0.009<br/>gini = 0.493<br/>samples = 457<br/>value = [202, 255]<br/>class = ->, fillcolor="#399de535"] ;
+1 [label=<A9_t &le; -0.043<br/>gini = 0.488<br/>samples = 437<br/>value = [185, 252]<br/>class = ->, fillcolor="#399de544"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<A13_s &le; 2.829<br/>gini = 0.096<br/>samples = 218<br/>value = [11, 207]<br/>class = ->, fillcolor="#399de5f1"] ;
+1 -> 2 ;
+3 [label=<A7_v &le; 0.836<br/>gini = 0.081<br/>samples = 190<br/>value = [8, 182]<br/>class = ->, fillcolor="#399de5f4"] ;
+2 -> 3 ;
+4 [label="(...)", fillcolor="#C0C0C0"] ;
+3 -> 4 ;
+11 [label="(...)", fillcolor="#C0C0C0"] ;
+3 -> 11 ;
+22 [label=<A10_t &le; -0.025<br/>gini = 0.191<br/>samples = 28<br/>value = [3, 25]<br/>class = ->, fillcolor="#399de5e0"] ;
+2 -> 22 ;
+23 [label="(...)", fillcolor="#C0C0C0"] ;
+22 -> 23 ;
+26 [label="(...)", fillcolor="#C0C0C0"] ;
+22 -> 26 ;
+27 [label=<A10_t &le; -0.126<br/>gini = 0.327<br/>samples = 219<br/>value = [174, 45]<br/>class = +>, fillcolor="#e58139bd"] ;
+1 -> 27 ;
+28 [label=<A14 &le; 4.028<br/>gini = 0.482<br/>samples = 79<br/>value = [47, 32]<br/>class = +>, fillcolor="#e5813951"] ;
+27 -> 28 ;
+29 [label="(...)", fillcolor="#C0C0C0"] ;
+28 -> 29 ;
+36 [label="(...)", fillcolor="#C0C0C0"] ;
+28 -> 36 ;
+37 [label=<A4_u &le; -0.383<br/>gini = 0.168<br/>samples = 140<br/>value = [127, 13]<br/>class = +>, fillcolor="#e58139e5"] ;
+27 -> 37 ;
+38 [label="(...)", fillcolor="#C0C0C0"] ;
+37 -> 38 ;
+41 [label="(...)", fillcolor="#C0C0C0"] ;
+37 -> 41 ;
+52 [label=<gini = 0.255<br/>samples = 20<br/>value = [17, 3]<br/>class = +>, fillcolor="#e58139d2"] ;
+0 -> 52 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
